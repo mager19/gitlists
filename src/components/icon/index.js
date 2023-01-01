@@ -6,6 +6,8 @@ import Branch from "./branch";
 import Cancel from "./cancel";
 import Github from "./github";
 import Home from "./home";
+import Star from "./star";
+import Search from "./search";
 
 function Index({ name, ...props }) {
 	switch (name) {
@@ -32,6 +34,12 @@ function Index({ name, ...props }) {
 		}
 		case "home": {
 			return <Home {...props} />;
+		}
+		case "star": {
+			return <Star {...props} />;
+		}
+		case "search": {
+			return <Search {...props} />;
 		}
 		default: {
 			return null;

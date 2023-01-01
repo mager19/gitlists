@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import props from "./profile-data";
+// import props from "./profile-data";
 import Button from "./button";
 import Icon from "./icon";
 
@@ -48,7 +48,7 @@ const ProfileStyled = styled.div`
 	}
 `;
 
-function Profile() {
+function Profile(props) {
 	const {
 		name,
 		login,
@@ -60,6 +60,7 @@ function Profile() {
 		blog,
 		twitter_username,
 	} = props;
+
 	return (
 		<ProfileStyled>
 			<img
@@ -75,7 +76,7 @@ function Profile() {
 				<Button text="Follow" link="#" className="custom" />
 				<Button
 					text="Sponsors"
-					icon={<Icon name="home" color="yellow" />}
+					icon={<Icon name="home" color="grey" />}
 				/>
 			</div>
 			<p className="bio info">{bio}</p>

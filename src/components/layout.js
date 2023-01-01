@@ -5,10 +5,10 @@ const LayoutStyled = styled.main`
 	max-inline-size: 75rem;
 	padding-inline: 20px;
 	margin: auto;
+	padding-block: 2.5rem;
 	@media screen and (min-width: 768px) {
-		border: 1px solid red;
 		display: grid;
-		grid-template-columns: 278px 1fr;
+		grid-template-columns: 300px 1fr;
 		grid-template-rows: auto 1fr;
 		grid-template-areas: "profile filters" "profile repo-list";
 		column-gap: 2rem;

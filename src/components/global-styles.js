@@ -25,16 +25,37 @@ const GlobalStylesStyled = createGlobalStyle`
     --caption-regular: 400 0.75rem/1.125rem Inter;
     --caption-medium: 500 0.75rem/1.125rem Inter;
   }
+  @media screen and (prefers-color-scheme: light) {
+    :root{
+      --primary:#1E1E1E;
+      --bg: #fff;
+      --grey: #4d4d4d;
+      --grey-1: #5d5d5d;
+      --grey--2: #f9f9f9;
+      --white: #1E1E1E;
+      --black: #fff;
+      --buttonBG:#1e1e1e;
+    }
+  }
+   
+
   body {
-    border: 10px solid green;
     background: var(--bg);
     color: var(--grey);
     font: var(--body1-regular);
+    margin:0; 
+  }
+  .message{
+    align-items:center;
+
+    display:flex;
+    justify-content:center;
+    height:30%;
   }
 `;
 
 function GlobalStyles() {
-	return <GlobalStylesStyled>GlobalStyles</GlobalStylesStyled>;
+	return <GlobalStylesStyled />;
 }
 
 export default GlobalStyles;
