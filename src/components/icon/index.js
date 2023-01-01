@@ -8,6 +8,7 @@ import Github from "./github";
 import Home from "./home";
 import Star from "./star";
 import Search from "./search";
+import User from "./user";
 
 function Index({ name, ...props }) {
 	switch (name) {
@@ -40,6 +41,9 @@ function Index({ name, ...props }) {
 		}
 		case "search": {
 			return <Search {...props} />;
+		}
+		case "user": {
+			return <User {...props} />;
 		}
 		default: {
 			return null;

@@ -14,11 +14,19 @@ const FilterStyled = styled.div`
 	.action-list{
 		display:flex;
 		gap:1rem;
+
+		@media screen and (max-width: 480px) {
+			flex-direction:column;
+		}
 	}
 
 	.select-list{
 		display:flex;
 		gap:0.5rem;
+
+		@media screen and (max-width: 480px) {
+			margin-block-start:1rem;
+		}
 	}
 `;
 
